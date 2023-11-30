@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195463408821",
+    "project_id": "psicoitsch",
+    "storage_bucket": "psicoitsch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195463408821:android:77fb6fffc06419e5d462fc",
+        "android_client_info": {
+          "package_name": "mx.tecnm.ciudadhidalgo.PsicoItsch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195463408821-setsnf8astocc1bi6idcnn383irhjmlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEZPffyzxmXme9Rs2gQ8i7Mtnz9T2YudU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195463408821-setsnf8astocc1bi6idcnn383irhjmlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/fondo12"
+    tools:context=".Canalizacion_psicoRegistro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro Canalización Psicológica"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/azul01"
+            android:fontFamily="@font/handlee"/>
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/logo3"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="seleccina la fecha de Solisitud"
+            android:textSize="16dp"
+            android:fontFamily="@font/handlee"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/fechasol"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="selecciona la fecha de atencion"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/fechaat"
+            android:fontFamily="@font/handlee"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/areacanal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Área"
+            android:fontFamily="@font/handlee"
+            android:textColorHint="@color/azul01"
+            app:hintTextColor="@color/azul01"
+            app:boxStrokeColor="@color/azul01">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handlee"
+                android:inputType="textCapCharacters"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/observaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Observaciones "
+            android:fontFamily="@font/handlee"
+            app:hintTextColor="@color/azul01"
+            android:textColorHint="@color/azul01"
+            app:boxStrokeColor="@color/azul01">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handlee"
+                android:inputType="textCapCharacters"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btncanal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Registrar"
+            android:fontFamily="@font/handlee"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/azul01"/>
+
+    </LinearLayout>
+
+</ScrollView>

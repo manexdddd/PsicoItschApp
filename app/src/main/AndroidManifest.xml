@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".MySesiones"
+            android:exported="false" />
+        <activity
+            android:name=".Tutoria_individual"
+            android:exported="false" />
+        <activity
+            android:name=".Canalizacion_psicoRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".Canalizacion_academica"
+            android:exported="false" />
+        <activity
+            android:name=".KarnetAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".EditarAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".AlumnoDetalle"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".Alumnos"
+            android:exported="false" />
+        <activity
+            android:name=".GrupoPlaticas"
+            android:exported="false" />
+        <activity
+            android:name=".DetallePlaticaTutor"
+            android:exported="false" />
+        <activity
+            android:name=".TutorPlaticas"
+            android:exported="false" />
+        <activity
+            android:name=".EditarTutorPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".TutorPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleAvisoTutor"
+            android:exported="false" />
+        <activity
+            android:name=".HomeT"
+            android:exported="false" />
+        <activity
+            android:name=".MPDetalle"
+            android:exported="false" />
+        <activity
+            android:name=".MPlatica"
+            android:exported="false" />
+        <activity
+            android:name=".DetallePlatica"
+            android:exported="false" />
+        <activity
+            android:name=".Platicas"
+            android:exported="false" />
+        <activity
+            android:name=".Sesion"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Credential"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetalleAviso"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarnetP2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Carnet"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecuperarPass"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Carnet_vista"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

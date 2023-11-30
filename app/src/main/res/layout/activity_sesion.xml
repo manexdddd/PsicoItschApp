@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Sesion">
+    <androidx.core.widget.NestedScrollView
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:fillViewport="true"
+        android:background="@drawable/fondo21"
+        tools:context=".Sesion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Solicita Tu Atención Psicológica ahora!"
+                android:fontFamily="@font/handlee"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/azul01"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo8"
+                android:layout_gravity="center"
+                android:fontFamily="@font/handlee"
+                android:layout_marginTop="-15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="selecciona la fecha de atencion"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:id="@+id/fechaat"
+                android:fontFamily="@font/handlee"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hora de Atencion deseado"
+                android:textSize="16dp"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:id="@+id/horaxd"
+                android:fontFamily="@font/handlee"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombre_alumnod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Nombre Completo"
+                android:fontFamily="@font/handlee"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/handlee"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/grupoxd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Grupo"
+                android:fontFamily="@font/handlee"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/handlee"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numeroControlxd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handlee"
+                android:layout_marginTop="6dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Número de Control"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/handlee"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/observaciones_canalizacionPsicologicaxd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/handlee"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Carrera"
+                app:hintTextColor="@color/azul01"
+                android:textColorHint="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:inputType="textCapCharacters"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/telefono_SesionSolicitar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handlee"
+                android:layout_marginTop="6dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Telefono"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombre_tutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/handlee"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Nombre Completo Tutor"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/obs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/handlee"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="observaciones"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/motivoSolicitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/handlee"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Motivo de Solicitud de atención"
+                android:textColorHint="@color/azul01"
+                app:hintTextColor="@color/azul01"
+                app:boxStrokeColor="@color/azul01">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/handlee"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnsesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginBottom="70dp"
+                android:text="Registrar Sesión"
+                android:fontFamily="@font/handlee"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:backgroundTint="@color/azul01"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/viewholder_backdegradient"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:theme="@style/DefaultAppBarLayout"
+
+        >
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Solicitar Sesión️ 👩🏻‍⚕️"
+            android:background="@drawable/viewholder_backdegradient"
+            app:titleTextColor="@color/md_theme_light_onPrimary"
+            android:theme="@style/DefaultAppBarLayout"
+            app:menu="@menu/top_app_bar2"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

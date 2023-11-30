@@ -1,0 +1,96 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_marginTop="16dp"
+        android:id="@+id/standard_bottom_sheet"
+        style="@style/Widget.Material3.BottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <!-- Drag handle for accessibility -->
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:id="@+id/drag_handle"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Bottom sheet contents. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="center">
+
+
+        <TextView
+                android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/handlee"
+                android:text="Canalizaciones ✨" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/handlee"
+                android:text="Escoge el tipo de canalizacion" />
+
+            <Button
+                android:id="@+id/bottomsheet_button"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:layout_height="wrap_content"
+                android:text="TUTORIA INDIVIDUAL"
+                android:fontFamily="@font/handlee"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_secondary"
+                android:backgroundTint="@color/md_theme_light_surfaceVariant"
+                />
+
+            <Button
+                android:id="@+id/bottomsheet_button2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="CANALIZACION"
+                android:fontFamily="@font/handlee"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_secondary"
+                android:backgroundTint="@color/md_theme_light_surfaceVariant"
+                />
+
+            <Button
+                android:id="@+id/bottomsheet_button3"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/handlee"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:text="CANALIZACION ACADEMICA"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/md_theme_light_secondary"
+                android:backgroundTint="@color/md_theme_light_surfaceVariant"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Manuel Vergara Martinez-->
+
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#BFDCC570"
+    style="?attr/materialCardViewFilledStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!-- Media -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginVertical="10dp"
+        app:srcCompat="@drawable/smile"
+        android:contentDescription="dddd"
+        android:id="@+id/fotoplatica"
+        android:layout_gravity="end"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <!-- Title, secondary and supporting text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tema"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="150dp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:id="@+id/temapla"
+            android:fontFamily="@font/handlee"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="fecha"
+            android:textSize="12sp"
+            android:fontFamily="@font/handlee"
+
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary"
+            android:id="@+id/fechapla"
+            app:layout_constraintTop_toBottomOf="@+id/temapla"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="hora"
+            android:textSize="12sp"
+            android:fontFamily="@font/handlee"
+
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary"
+            android:id="@+id/horapla"
+            app:layout_constraintTop_toBottomOf="@+id/fechapla"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+            android:background="#6F94C1D4"
+            android:text="Desuscribir grupo"
+            android:fontFamily="@font/handlee"
+            android:id="@+id/cielo"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

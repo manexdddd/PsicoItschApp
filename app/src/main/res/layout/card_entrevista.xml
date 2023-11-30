@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="360dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="15dp"
+    android:background="@drawable/viewholdercarnet_back"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_marginTop="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="346dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/viewholdercar_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_tutoindiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/handlee"
+            android:text="TUTORÍA INDIVIDUAL (ENTREVISTAS)"
+            android:textAlignment="center"
+            android:textColor="@color/azul02"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/texto_tutoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/handlee"
+            android:text="Nota: La Entrevista puede ser Personal, Académica, Social, Profesional y/o Administrativa"
+            android:textAlignment="textStart"
+            android:textColor="@color/gris2"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_tutoindiv"
+            tools:ignore="MissingConstraints" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/texto_tutoria">
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:background="@color/black"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Tema de la Entrevista"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tema_entrevista"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Materias Atrasadas" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:background="@color/black"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:text="Fecha"
+                    android:fontFamily="@font/handlee"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/fechaentrevista"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="15/12/2023" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:background="@color/black"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Nombre-Firma Alum"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/nombrefirma_alumno"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:paddingVertical="20dip"
+                    android:text="José Antonio Medina Esquivel" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:background="@color/black"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Nombre-Firma Tutor"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/nombrefirma_tutor"
+                    android:padding="10dip"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Juan Carlos Madrigal Perez" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
