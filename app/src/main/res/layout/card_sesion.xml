@@ -86,17 +86,7 @@
             android:id="@+id/tipo"
             app:layout_constraintTop_toBottomOf="@+id/fechapla"
             />
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:text="Cancelar/Reprogramar"
-            android:layout_marginTop="8dp"
-            android:background="#6F94C1D4"
-            android:fontFamily="@font/handlee"
-            android:id="@+id/cielo"
-            android:layout_gravity="bottom"
-            />
     </LinearLayout>
 
 
