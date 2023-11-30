@@ -229,7 +229,7 @@
                     android:fontFamily="@font/handlee"
                     android:text="@string/hint08"
                     android:textColor="@color/azul01"
-                    android:textSize="12dp"
+                    android:textSize="10dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.477"

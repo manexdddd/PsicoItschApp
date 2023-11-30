@@ -129,7 +129,7 @@ class Platicas : AppCompatActivity() {
                 }
 
                 R.id.page_3 -> {
-                    val intent = Intent(this, Sesion::class.java)
+                    val intent = Intent(this, MySesiones::class.java)
                     startActivity(intent)
                     false
                 }

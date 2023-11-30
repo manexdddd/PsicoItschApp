@@ -109,13 +109,11 @@ class Carnet_vista : AppCompatActivity() {
                         "${documento.data.get("control")}"
                     )
 
-                    // Get the "usuario" array
                     val acaArray = documento.get("academicas") as List<Map<String, Any>>
                     val canalArray = documento.get("canalizacion") as List<Map<String, Any>>
                     val EntrevistaArray = documento.get("entrevista") as List<Map<String, Any>>
                     for (usuarioMap in acaArray) {
-                        // Do something with usuarioMap
-                        val asignaturaf = usuarioMap["asignatura"] // Replace "someField" with the key of the field you want to retrieve
+                        val asignaturaf = usuarioMap["asignatura"]
                         val estatusf = usuarioMap["estatus"]
                         val fechaf = usuarioMap["fecha"]
                         val tipo = usuarioMap["tipo"]
@@ -135,8 +133,8 @@ class Carnet_vista : AppCompatActivity() {
                     }
 
                     for (usuarioMap in canalArray) {
-                        // Do something with usuarioMap
-                        val areaf = usuarioMap["area"] // Replace "someField" with the key of the field you want to retrieve
+
+                        val areaf = usuarioMap["area"]
                         val fechaf = usuarioMap["fecha"]
                         val fechasf = usuarioMap["fechas"]
                         val obser = usuarioMap["observaciones"]

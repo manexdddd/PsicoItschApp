@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:padding="30dp"
         android:fillViewport="true"
-        android:background="@drawable/fondo21"
+        android:background="@drawable/fondo17"
         tools:context=".Sesion">
 
         <LinearLayout

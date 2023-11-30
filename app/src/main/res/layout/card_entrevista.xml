@@ -117,7 +117,7 @@
                 <TextView
                     android:id="@+id/nombrefirma_alumno"
                     android:padding="10dip"
-                    android:textSize="12sp"
+                    android:textSize="9sp"
                     android:fontFamily="@font/handlee"
                     android:paddingVertical="20dip"
                     android:text="José Antonio Medina Esquivel" />
