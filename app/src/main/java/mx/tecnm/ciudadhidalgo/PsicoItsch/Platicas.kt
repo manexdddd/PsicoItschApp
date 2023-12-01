@@ -139,7 +139,6 @@ class Platicas : AppCompatActivity() {
 
                     startActivity(intent)
                     false
-
                 }
 
                 else -> false

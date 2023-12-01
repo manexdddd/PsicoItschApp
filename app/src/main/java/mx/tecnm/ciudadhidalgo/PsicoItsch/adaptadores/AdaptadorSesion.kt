@@ -29,7 +29,7 @@ import mx.tecnm.ciudadhidalgo.PsicoItsch.usuario
 class AdaptadorSesion(val listasesiones:ArrayList<Sesiones>, private val listener: OnRefreshListener):
     RecyclerView.Adapter<AdaptadorSesion.SesionViewHolder>(){
 
-    var onSesionClick:((Platica)->Unit)? = null
+    var onSesionClick:((Sesiones)->Unit)? = null
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -50,6 +50,9 @@ class AdaptadorSesion(val listasesiones:ArrayList<Sesiones>, private val listene
         holder.hora.text = "Hora \uD83D\uDD5C "+sesion.hora
         holder.tipo.text = "tipo \uD83D\uDD5C "+sesion.tipo
 
+        holder.itemView.setOnClickListener{
+            onSesionClick?.invoke(sesion)
+        }
 
 
     }

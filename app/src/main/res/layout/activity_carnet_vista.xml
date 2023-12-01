@@ -49,9 +49,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                >
+                android:layout_height="wrap_content">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -698,10 +696,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rventrevista"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="50dp"
-            tools:listitem="@layout/card_entrevista"
-            />
+            tools:listitem="@layout/card_entrevista" />
 
 
        <androidx.recyclerview.widget.RecyclerView
@@ -709,21 +706,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rvacademica"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="50dp"
-            tools:listitem="@layout/card_academica"
-            />
+            tools:listitem="@layout/card_academica"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_gravity="top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rvcanal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="50dp"
-            tools:listitem="@layout/card_canal"
-            />
-
-
+            tools:listitem="@layout/card_canal"/>
     </LinearLayout>
 
 </ScrollView>

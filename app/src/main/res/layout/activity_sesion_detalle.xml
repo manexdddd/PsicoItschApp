@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Manuel Vergara Martinez-->
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:fontFamily="@font/handlee"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <!-- Note: A RecyclerView can also be used -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles de Mi sesion 💘"
+                android:fontFamily="@font/handlee"
+                android:layout_marginStart="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/md_theme_light_primary"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <ImageView
+
+                        android:id="@+id/BtnRegresar_detalle"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/logo"
+
+                        android:layout_marginStart="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/usuario_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/handlee"
+                        android:text="PsicoItsch"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/fecha_Sesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="20dp"
+                        android:padding="5dp"
+                        android:text="fecha"
+                        android:fontFamily="@font/handlee"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/md_theme_light_primary"
+                        android:textSize="10sp"
+
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/fotosesion"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sesion"
+
+                android:layout_marginHorizontal="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi sesion"
+                android:textSize="14sp"
+
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/md_theme_light_primary"
+                />
+
+
+            <TextView
+                android:id="@+id/nombresesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alumno"
+
+                android:fontFamily="@font/handlee"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/md_theme_dark_outline"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+
+                android:fontFamily="@font/handlee"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_dark_outline"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+
+                android:fontFamily="@font/handlee"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_dark_outline"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+
+                android:fontFamily="@font/handlee"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_scrim"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="20dp"
+
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:background="#FEA692"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/solo"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/md_theme_light_scrim"
+                        android:text="Respira hondo, libera lo negativo, abraza lo positivo."
+                        android:fontFamily="@font/handlee"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/image_view" />
+                    <TextView
+                        android:layout_marginStart="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="16dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="By Spartan web"
+                        android:textColor="@color/md_theme_light_outline"
+                        android:fontFamily="@font/handlee"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_toLeftOf="@+id/image_view" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnrepro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/md_theme_light_secondary"
+                android:text="Reprogramar Sesion 💌"
+                android:padding="10dp"
+
+                android:fontFamily="@font/handlee"
+                android:layout_marginHorizontal="20dp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/md_theme_light_error"
+                android:text="Cancelar Sesion 💔 "
+                android:padding="10dp"
+
+                android:fontFamily="@font/handlee"
+                android:layout_marginHorizontal="20dp"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Mi sesion ❤️‍🩹"
+            android:background="@drawable/viewholder_backdegradient"
+            app:titleTextColor="@color/md_theme_light_onPrimary"
+            android:theme="@style/DefaultAppBarLayout"
+            app:menu="@menu/top_app_bar2"
+            app:navigationIcon="@drawable/baseline_arrow_back_24" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

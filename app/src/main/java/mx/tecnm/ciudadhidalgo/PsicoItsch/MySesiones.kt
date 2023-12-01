@@ -92,6 +92,16 @@ class MySesiones : AppCompatActivity() , OnRefreshListener{
 
                             adaptadorsesion = AdaptadorSesion(listasesiones,this)
                             recyclearsesion.adapter =  adaptadorsesion
+
+                            adaptadorsesion.onSesionClick = {
+                                val intent = Intent(this, SesionDetalle::class.java)
+                                intent.putExtra("sesion", it)
+
+                                startActivity(intent)
+
+                            }
+
+
                             Log.e(ContentValues.TAG, foto + completo + "sesion" + sesion.numeroC + sesion.nombreAlumno)
                         }.addOnFailureListener { exception ->
                             Log.e(ContentValues.TAG, "Error getting document: ", exception)
